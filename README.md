@@ -1,7 +1,6 @@
 # FIAP Bank ATM - Checkpoint 1
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=white&style=for-the-badge)
 
 Protótipo de um terminal de Autoatendimento (Caixa Eletrônico) desenvolvido como parte do **Checkpoint 1** da disciplina de **Domain Driven Design - Java** no curso de Engenharia de Software da FIAP.
 
