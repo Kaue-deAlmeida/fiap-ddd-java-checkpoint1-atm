@@ -30,7 +30,28 @@ public class FiapBankAtm {
                 System.out.println("Senha fraca! A senha deve ter 8+ caracteres, número, letra maiúscula e caractere especial.");
             }
         }
+        // Autenticação (Login)
+        int tentativas = 0;
+        boolean autenticado = false;
 
+        while (tentativas < 3) {
+            System.out.print("\nDigite sua senha para acessar o terminal da ATM: ");
+            String senhaLogin = leitor.nextLine();
+
+            if (senhaLogin.equals(senhaCadastrada)) {
+                autenticado = true;
+                break;
+            } else {
+                tentativas++;
+                System.out.println("Senha incorreta! Tentativa " + tentativas + " de 3.");
+            }
+        }
+
+        if (!autenticado) {
+            System.out.println("ACESSO BLOQUEADO");
+            leitor.close();
+            return;
+        }
         leitor.close();
     }
 }
