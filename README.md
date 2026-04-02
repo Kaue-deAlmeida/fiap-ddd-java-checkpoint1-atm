@@ -34,7 +34,7 @@ O **FIAP Bank ATM** é uma aplicação de console que simula o fluxo completo de
 1. Certifique-se de ter o JDK (Java Development Kit) instalado em sua máquina.
 2. Clone o repositório:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/fiap-ddd-java-checkpoint1-atm.git](https://github.com/SEU_USUARIO/fiap-ddd-java-checkpoint1-atm.git)
+   git clone https://github.com/Kaue-deAlmeida/fiap-ddd-java-checkpoint1-atm.git
    ```
 3. Navegue até a pasta do projeto:
   ```bash
