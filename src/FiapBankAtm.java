@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class FiapBankAtm {
+
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+        double saldo = 0.0;
+
+        // Tela de inicial
+        System.out.println("=== Bem-vindo ao FIAP Bank ===");
+        System.out.print("Digite seu nome completo: ");
+        String nomeCompleto = leitor.nextLine().trim();
+
+        // Extraindo o primeiro nome
+        String primeiroNome = nomeCompleto.split(" ")[0];
+        System.out.println("Olá, " + primeiroNome + "! Vamos configurar sua segurança.");
+
+        // Cadastro de Senha Forte
+        String senhaCadastrada;
+        String regexSenha = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*()\\-_+=?><]).{8,}$";
+
+        while (true) {
+            System.out.print("Cadastre uma senha forte: ");
+            senhaCadastrada = leitor.nextLine();
+
+            if (senhaCadastrada.matches(regexSenha)) {
+                System.out.println("Senha cadastrada com sucesso!");
+                break;
+            } else {
+                System.out.println("Senha fraca! A senha deve ter 8+ caracteres, número, letra maiúscula e caractere especial.");
+            }
+        }
+
+        leitor.close();
+    }
+}
