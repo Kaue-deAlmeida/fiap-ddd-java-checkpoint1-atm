@@ -24,7 +24,6 @@ O **FIAP Bank ATM** é uma aplicação de console que simula o fluxo completo de
 ## 🛠️ Tecnologias Utilizadas
 
 - **Linguagem:** Java 17+
-- **Ambiente de Desenvolvimento:** Arch Linux
 - **Entrada de Dados:** `java.util.Scanner`
 - **Ferramentas:** Git & GitHub
 
